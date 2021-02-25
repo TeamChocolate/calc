@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,700");
+@import url("https://pro.fontawesome.com/releases/v5.2.0/css/all.css");
+body {
+  font-size: 62.5%;
+  min-width: 32em;
+  background: #fff;
+  color: #000;
+  font-family: "Montserrat", sans-serif; }
+  body.mobiled {
+    overflow-y: scroll; }
+
+.wrap {
+  position: relative;
+  min-width: 32em; }
+  .wrap.mobiled {
+    left: 0;
+    top: 0;
+    width: 100%; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+  margin-top: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit; }
+
+p {
+  font-size: 1.4em; }
+  p:last-child {
+    margin-bottom: 0; }
+
+a, a:hover, a:visited {
+  color: inherit; }
+
+b span {
+  font-weight: inherit; }
+
+ul, ol {
+  font-size: inherit;
+  list-style: none;
+  margin: 0; }
+  ul li ul, ul li ol, ol li ul, ol li ol {
+    margin: 0; }
+
+img {
+  outline: none; }
+
+.bold {
+  font-weight: bold; }
+
+.center {
+  text-align: center; }
+
+.relative {
+  position: relative; }
+
+.justify {
+  text-align: justify;
+  font-size: 0px;
+  text-justify: distribute-all-lines; }
+  .justify:after {
+    content: "";
+    width: 100%;
+    display: inline-block; }
+  .justify > * {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 10px; }
+
+.table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%; }
+  .table .cell {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%; }
+
+.row {
+  max-width: 78.75rem; }
+
+.columns {
+  min-height: 1px; }
+
+.responsive .tablet, .responsive .mobile {
+  display: none; }
+
+@media only screen and (max-width: 1024px) {
+  .responsive .tablet {
+    display: block; } }
+
+@media only screen and (max-width: 767px) {
+  .responsive .mobile {
+    display: block; } }
+
+.page.nutrition {
+  padding-top: 10em;
+  overflow: hidden; }
+  .page.nutrition .selector {
+    margin-bottom: 5em; }
+    .page.nutrition .selector .header {
+      margin-bottom: 5em; }
+      .page.nutrition .selector .header p {
+        text-align: center;
+        line-height: 1; }
+      .page.nutrition .selector .header span {
+        display: block; }
+        .page.nutrition .selector .header span:first-child {
+          font-size: 90px;
+          font-weight: 700; }
+        .page.nutrition .selector .header span:last-child {
+          font-size: 40px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.18em; }
+    .page.nutrition .selector .select {
+      display: inline-block;
+      vertical-align: bottom;
+      width: 14.28571%;
+      cursor: pointer;
+      opacity: 1; }
+      .page.nutrition .selector .select.hide {
+        opacity: 0.5; }
+      .page.nutrition .selector .select p {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-align: center; }
+  .page.nutrition .screens .screen {
+    display: none; }
+    .page.nutrition .screens .screen.show {
+      display: block; }
+  .page.nutrition .calculator p {
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 1.4em;
+    font-weight: 500; }
+  .page.nutrition .calculator .title {
+    background: #000;
+    padding: 1.5em 3em; }
+    .page.nutrition .calculator .title p {
+      color: #fff;
+      text-transform: uppercase; }
+  .page.nutrition .calculator .filter {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+    .page.nutrition .calculator .filter.open .container {
+      display: block; }
+    .page.nutrition .calculator .filter .top {
+      padding: 2em 3em;
+      cursor: pointer; }
+      .page.nutrition .calculator .filter .top p, .page.nutrition .calculator .filter .top img {
+        display: inline-block;
+        vertical-align: middle; }
+      .page.nutrition .calculator .filter .top p {
+        color: #fff;
+        text-transform: uppercase; }
+      .page.nutrition .calculator .filter .top img {
+        width: 2em;
+        height: 2em;
+        margin-left: 1em;
+        transform: rotate(-90deg); }
+    .page.nutrition .calculator .filter .container {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      z-index: 1;
+      display: none;
+      padding-top: 1em; }
+      .page.nutrition .calculator .filter .container .line {
+        padding: 1em 2em;
+        cursor: pointer; }
+        .page.nutrition .calculator .filter .container .line.active .check:after {
+          opacity: 1; }
+        .page.nutrition .calculator .filter .container .line .check, .page.nutrition .calculator .filter .container .line p {
+          display: inline-block;
+          vertical-align: middle; }
+        .page.nutrition .calculator .filter .container .line p {
+          font-size: 2em; }
+        .page.nutrition .calculator .filter .container .line .check {
+          width: 2em;
+          height: 2em;
+          margin-right: 1em;
+          margin-top: -0.15em;
+          position: relative; }
+          .page.nutrition .calculator .filter .container .line .check:after {
+            content: '';
+            position: absolute;
+            top: 15%;
+            left: 15%;
+            bottom: 15%;
+            right: 15%;
+            display: block;
+            opacity: 0;
+            transition: opacity 250ms; }
+      .page.nutrition .calculator .filter .container .notes {
+        padding: 2em 2em;
+        text-align: center; }
+      .page.nutrition .calculator .filter .container .clear {
+        padding: 1em 3em;
+        cursor: pointer;
+        margin-bottom: 2em; }
+        .page.nutrition .calculator .filter .container .clear p {
+          color: #fff;
+          text-align: center;
+          font-size: 2em;
+          text-transform: uppercase; }
+      .page.nutrition .calculator .filter .container .small {
+        font-size: 1.4em;
+        text-align: center;
+        text-transform: none; }
+  .page.nutrition .calculator .item {
+    position: relative; }
+    .page.nutrition .calculator .item.selected .icon {
+      transform: rotate(45deg); }
+    .page.nutrition .calculator .item.selected p {
+      opacity: 1 !important; }
+    .page.nutrition .calculator .item.filtered {
+      opacity: 0.3; }
+  .page.nutrition .calculator .name {
+    width: 40%; }
+  .page.nutrition .calculator .values {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0; }
+  .page.nutrition .calculator .val {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden; }
+  .page.nutrition .calculator .labels .val {
+    position: relative; }
+    .page.nutrition .calculator .labels .val p {
+      position: absolute;
+      white-space: nowrap;
+      transform: rotate(-90deg); }
+  .page.nutrition .calculator .more {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    width: 2.4em;
+    height: 2.4em;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/info_icon.svg");
+    transform: translate(0, -50%);
+    display: none; }
+  .page.nutrition .calculator .main .item {
+    border-bottom: 1px solid #000;
+    cursor: pointer; }
+    .page.nutrition .calculator .main .item:last-child {
+      border-bottom: 0; }
+  .page.nutrition .calculator .main .name {
+    padding: 1em 0 1em 3em; }
+    .page.nutrition .calculator .main .name .icon, .page.nutrition .calculator .main .name .img, .page.nutrition .calculator .main .name p {
+      display: inline-block;
+      vertical-align: middle; }
+    .page.nutrition .calculator .main .name .icon {
+      font-size: 2.4em;
+      margin-right: 20px;
+      transition: transform 250ms; }
+    .page.nutrition .calculator .main .name .img {
+      width: 6em;
+      height: 6em;
+      margin-right: 2em;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+  .page.nutrition .calculator .main .contain {
+    height: 100%; }
+  .page.nutrition .calculator .main .val:nth-child(odd) {
+    background: #f1f1f1; }
+  .page.nutrition .calculator .main .val p {
+    opacity: 0;
+    transition: opacity 250ms; }
+  .page.nutrition .calculator .header {
+    margin-bottom: 3em; }
+    .page.nutrition .calculator .header .labels .val p {
+      left: 50%;
+      bottom: 0;
+      margin-left: 0.4em;
+      transform-origin: 0% 100%; }
+  .page.nutrition .notes {
+    padding: 10em 0; }
+    .page.nutrition .notes p {
+      line-height: 1.4;
+      margin-bottom: 1rem; }
+      .page.nutrition .notes p:last-child {
+        margin-bottom: 0; }
+  .page.nutrition .totals {
+    position: fixed;
+    left: 0;
+    bottom: -100%;
+    background: #e9e9e9;
+    width: 100%;
+    padding: 0;
+    transition: bottom 500ms; }
+    .page.nutrition .totals.stick {
+      bottom: 0 !important; }
+    .page.nutrition .totals.stay {
+      position: relative;
+      bottom: 0 !important; }
+    .page.nutrition .totals .val:nth-child(odd) {
+      background: #f1f1f1; }
+    .page.nutrition .totals .footer .total {
+      display: none; }
+      .page.nutrition .totals .footer .total.show {
+        display: block; }
+      .page.nutrition .totals .footer .total .name {
+        padding: 2em 3em;
+        text-align: right; }
+        .page.nutrition .totals .footer .total .name span {
+          display: none; }
+      .page.nutrition .totals .footer .total .val:nth-child(odd) {
+        background: #f1f1f1; }
+    .page.nutrition .totals .footer .labels .val p {
+      top: 0;
+      right: 50%;
+      padding: 0 20px 0 15px;
+      margin-right: 0.6em;
+      transform-origin: 100% 0%; }
+
+@media only screen and (max-width: 1024px) {
+  .page.nutrition .selector {
+    margin-bottom: 3em; }
+    .page.nutrition .selector .header {
+      margin-bottom: 3em; }
+      .page.nutrition .selector .header span:first-child {
+        font-size: 70px; }
+      .page.nutrition .selector .header span:last-child {
+        font-size: 30px; }
+    .page.nutrition .selector .select p {
+      font-size: 16px; }
+  .page.nutrition .calculator .filter {
+    position: relative;
+    display: inline-block;
+    text-align: left; }
+    .page.nutrition .calculator .filter .container .line p {
+      font-size: 1.6em; }
+    .page.nutrition .calculator .filter .container .clear p {
+      font-size: 1.6em; }
+  .page.nutrition .calculator .name {
+    width: 100%; }
+  .page.nutrition .calculator .values {
+    display: none; }
+  .page.nutrition .calculator .more {
+    display: block; }
+  .page.nutrition .calculator .header {
+    display: none; }
+    .page.nutrition .calculator .header .name {
+      text-align: center; }
+  .page.nutrition .notes {
+    padding: 5em 0; }
+  .page.nutrition .totals {
+    bottom: 0 !important; }
+    .page.nutrition .totals .values {
+      display: block;
+      right: 5em; }
+    .page.nutrition .totals .val {
+      display: none;
+      text-align: right; }
+      .page.nutrition .totals .val:nth-child(1) {
+        display: table-cell;
+        background: transparent !important; }
+    .page.nutrition .totals .more {
+      cursor: pointer; }
+    .page.nutrition .totals p {
+      font-size: 2em; }
+    .page.nutrition .totals .footer .total .name {
+      padding-right: 10em;
+      padding-left: 3em;
+      text-align: left; }
+      .page.nutrition .totals .footer .total .name span {
+        display: inline-block; }
+    .page.nutrition .totals .footer .val {
+      overflow: visible; }
+      .page.nutrition .totals .footer .val:nth-child(2) p {
+        float: right; }
+    .page.nutrition .totals .footer .labels {
+      display: none; } }
+
+@media only screen and (max-width: 767px) {
+  .page.nutrition .selector {
+    margin-bottom: 3em;
+    text-align: center; }
+    .page.nutrition .selector .header {
+      margin-bottom: 3em; }
+      .page.nutrition .selector .header span:first-child {
+        font-size: 40px; }
+      .page.nutrition .selector .header span:last-child {
+        font-size: 17px; }
+    .page.nutrition .selector .boxes {
+      max-width: 40em;
+      margin: 0 auto; }
+    .page.nutrition .selector .select {
+      width: 25%; }
+      .page.nutrition .selector .select p {
+        font-size: 14px; }
+  .page.nutrition .calculator .filter {
+    position: relative;
+    display: inline-block;
+    text-align: left; }
+    .page.nutrition .calculator .filter .container .line p {
+      font-size: 1.6em; }
+    .page.nutrition .calculator .filter .container .clear p {
+      font-size: 1.6em; }
+  .page.nutrition .calculator p {
+    font-size: 13px; }
+  .page.nutrition .calculator .main .name {
+    padding: 1em 4em 1em 1.5em; }
+    .page.nutrition .calculator .main .name .icon {
+      margin-right: 5px;
+      font-size: 2em; }
+    .page.nutrition .calculator .main .name .img {
+      margin-right: 0.5em;
+      width: 3.5em;
+      height: 3.5em; }
+  .page.nutrition .calculator .more {
+    width: 2em;
+    height: 2em; }
+  .page.nutrition .totals .values {
+    right: 4em; }
+  .page.nutrition .totals p {
+    font-size: 2em; }
+  .page.nutrition .totals .footer .total .name {
+    padding-right: 10em;
+    padding-left: 1.5em; } }
+
+.nutriflow {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1100;
+  position: absolute;
+  min-width: 32em;
+  transition: opacity 500ms; }
+  .nutriflow.open {
+    opacity: 1;
+    transition: opacity 500ms; }
+  .nutriflow.visible {
+    visibility: visible; }
+    .nutriflow.visible section {
+      height: auto; }
+  .nutriflow .outside {
+    position: relative;
+    height: 100%;
+    overflow: hidden; }
+  .nutriflow .inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -3em;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, 0.5); }
+  .nutriflow .cell {
+    vertical-align: top; }
+  .nutriflow .content {
+    position: relative;
+    width: 30em;
+    max-width: 90%;
+    margin: 0 auto; }
+  .nutriflow .wrapper {
+    background: #fff;
+    padding: 4em 0 0;
+    position: relative; }
+  .nutriflow .close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .nutriflow .header {
+    margin-bottom: 2em;
+    padding: 0 2em; }
+    .nutriflow .header p {
+      font-size: 2.2em;
+      text-align: center;
+      line-height: 1;
+      font-weight: 500; }
+  .nutriflow .info {
+    padding-bottom: 2em; }
+    .nutriflow .info p {
+      font-size: 1.6em;
+      margin-bottom: 0;
+      font-weight: 500; }
+    .nutriflow .info .line {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      .nutriflow .info .line:first-child {
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    .nutriflow .info .name, .nutriflow .info .val {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0.75em 2em; }
+    .nutriflow .info .name {
+      width: 70%;
+      border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    .nutriflow .info .val {
+      width: 30%;
+      text-align: center; }
