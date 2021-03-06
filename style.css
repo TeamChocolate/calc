@@ -217,7 +217,9 @@ img {
   .page.nutrition .calculator .item {
     position: relative; }
     .page.nutrition .calculator .item.selected .icon {
-      transform: rotate(45deg); }
+      font-weight: 700 !important;
+      color: green !important;       
+    }
     .page.nutrition .calculator .item.selected p {
       opacity: 1 !important; }
     .page.nutrition .calculator .item.filtered {
@@ -428,8 +430,8 @@ img {
       width: 3.5em;
       height: 3.5em; }
   .page.nutrition .calculator .more {
-    width: 2em;
-    height: 2em; }
+    width: 3em;
+    height: 3em; }
   .page.nutrition .totals .values {
     right: 4em; }
   .page.nutrition .totals p {
@@ -515,7 +517,7 @@ img {
       width: 70%;
       border-right: 1px solid rgba(0, 0, 0, 0.1); }
     .nutriflow .info .val {
-      width: 30%;
+      width: 0%;
       text-align: center; }
 
       #nutriheader {

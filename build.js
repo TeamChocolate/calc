@@ -469,3 +469,7 @@ if (project.page.hasClass('nutrition')) {
 		project.nutrition.pm();
 	});
 }
+
+$(".name").click(function() { 
+	$(this).find("i").toggleClass("fa-plus fa-check");
+  });
