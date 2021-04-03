@@ -94,7 +94,15 @@ img {
 
 @media only screen and (max-width: 767px) {
   .responsive .mobile {
-    display: block; } }
+    display: block; }   
+  }
+
+
+  @media only screen and (min-width: 767px) {
+    .notemobile {
+      display: none;
+    }
+  }
 
 .page.nutrition {
   padding-top: 10em;
@@ -532,4 +540,6 @@ img {
         font-weight: 600;    
       }
 
-      
+      .select:hover {
+        opacity: 1 !important;
+      }
